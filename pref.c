@@ -1,25 +1,5 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-#include"pref.h"
-char* longestCommonPrefix(char** strs, int strsSize);
-int main()
-    {
-    int size = 3;
-    char* words[3] = {"Dooog","Do","Dog"};
-    char* result;
-    /*
-    for(int i=0;i<size;i++) //testing array of strings
-        {
-        printf("%s\n",words[i]);
-        }
-    */
-    result = longestCommonPrefix(words,size); //call to function
-    printf("%s\n",result); //prints the most common prefix
-    return 0;
-    }
-
-    /*
+    #include<stdlib.h>
+    #include<string.h>
     char* longestCommonPrefix(char** strs, int strsSize) //function to find the most common prefix amongst three other words
     {
     int i, j;
@@ -49,4 +29,3 @@ int main()
     result[len] = '\0'; //adds null character so trash doesnt get printed when attempting to print prefix (result)
     return result; //returns prefix
     }
-    */
